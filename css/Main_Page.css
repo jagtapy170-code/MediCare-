@@ -1,0 +1,855 @@
+/*=====================================================
+                GOOGLE FONT & RESET
+=====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:linear-gradient(135deg,#f6fbff,#edf6ff);
+
+    color:#0f172a;
+
+    overflow-x:hidden;
+
+}
+
+/*=====================================================
+                ANIMATED BACKGROUND
+=====================================================*/
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-1;
+
+    overflow:hidden;
+
+}
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(100px);
+
+    opacity:.55;
+
+    animation:float 10s ease-in-out infinite;
+
+}
+
+.one{
+
+    width:420px;
+
+    height:420px;
+
+    background:#60a5fa;
+
+    left:-140px;
+
+    top:-100px;
+
+}
+
+.two{
+
+    width:500px;
+
+    height:500px;
+
+    background:#bfdbfe;
+
+    right:-180px;
+
+    bottom:-150px;
+
+}
+
+.three{
+
+    width:250px;
+
+    height:250px;
+
+    background:#93c5fd;
+
+    left:45%;
+
+    top:45%;
+
+}
+
+@keyframes float{
+
+    50%{
+
+        transform:translateY(-30px);
+
+    }
+
+}
+
+/*=====================================================
+                CONTAINER
+=====================================================*/
+
+.container{
+
+    width:100%;
+
+    max-width:1350px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+}
+
+/*=====================================================
+                    HEADER
+=====================================================*/
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo i{
+
+    font-size:60px;
+
+    color:#2563eb;
+
+    animation:pulse 2s infinite;
+
+}
+
+.logo h1{
+
+    font-size:54px;
+
+    color:#1e3a8a;
+
+}
+
+@keyframes pulse{
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+.header h2{
+
+    margin-top:20px;
+
+    font-size:36px;
+
+}
+
+.header p{
+
+    margin-top:12px;
+
+    color:#64748b;
+
+    font-size:18px;
+
+}
+
+/*=====================================================
+                PORTAL SECTION
+=====================================================*/
+
+.card-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,360px);
+
+    justify-content:center;
+
+    gap:45px;
+
+    margin-bottom:100px;
+
+}
+
+/*=====================================================
+                    CARD
+=====================================================*/
+
+.card{
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.7);
+
+    padding:35px;
+
+    min-height:420px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:
+
+        0 20px 40px rgba(15,23,42,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+
+        0 25px 55px rgba(37,99,235,.20);
+
+}
+
+/*=====================================================
+                    ICONS
+=====================================================*/
+
+.icon{
+
+    width:95px;
+
+    height:95px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.icon i{
+
+    color:white;
+
+    font-size:40px;
+
+}
+
+.doctor{
+
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+
+}
+
+.patient{
+
+    background:linear-gradient(135deg,#10b981,#22c55e);
+
+}
+
+.receptionist{
+
+    background:linear-gradient(135deg,#7c3aed,#6366f1);
+
+}
+
+.admin{
+
+    background:linear-gradient(135deg,#f59e0b,#ea580c);
+
+}
+
+/*=====================================================
+                    CARD TEXT
+=====================================================*/
+
+.card h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/*=====================================================
+                    BUTTON
+=====================================================*/
+
+.card a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.card a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 15px 35px rgba(37,99,235,.35);
+
+}
+
+.card a i{
+
+    transition:.3s;
+
+}
+
+.card a:hover i{
+
+    transform:translateX(6px);
+
+}
+/*=====================================================
+                WHY CHOOSE SECTION
+=====================================================*/
+
+.features{
+
+    margin-bottom:100px;
+
+    text-align:center;
+
+}
+
+.features h2{
+
+    font-size:38px;
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    max-width:700px;
+
+    margin:0 auto 50px;
+
+    color:#64748b;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.feature{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:22px;
+
+    padding:35px 25px;
+
+    border:1px solid rgba(255,255,255,.65);
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.feature:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 45px rgba(37,99,235,.18);
+
+}
+
+.feature i{
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:18px;
+
+}
+
+.feature h4{
+
+    font-size:21px;
+
+    margin-bottom:12px;
+
+}
+
+.feature p{
+
+    color:#64748b;
+
+    line-height:1.7;
+
+}
+
+/*=====================================================
+                    STATS
+=====================================================*/
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:100px;
+
+}
+
+.stat{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.stat:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat h2{
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.stat p{
+
+    color:#64748b;
+
+    font-weight:500;
+
+}
+
+/*=====================================================
+                TESTIMONIALS
+=====================================================*/
+
+.testimonials{
+
+    text-align:center;
+
+    margin-bottom:100px;
+
+}
+
+.testimonials h2{
+
+    font-size:38px;
+
+    margin-bottom:45px;
+
+}
+
+.testimonial-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.testimonial{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.testimonial:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.testimonial i{
+
+    font-size:34px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.testimonial p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.testimonial h4{
+
+    color:#0f172a;
+
+}
+
+.testimonial span{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+/*=====================================================
+                    FOOTER
+=====================================================*/
+
+.footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 25px;
+
+    border-radius:30px 30px 0 0;
+
+}
+
+.footer-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-logo i{
+
+    font-size:40px;
+
+    color:#60a5fa;
+
+}
+
+.footer-logo h2{
+
+    font-size:34px;
+
+}
+
+.footer p{
+
+    color:#cbd5e1;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    margin:35px 0;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#60a5fa;
+
+}
+
+.footer hr{
+
+    width:80%;
+
+    margin:30px auto;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+}
+
+.copyright{
+
+    font-size:14px;
+
+}
+
+/*=====================================================
+                CUSTOM SCROLLBAR
+=====================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf6ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#60a5fa;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+
+/*=====================================================
+                RESPONSIVE
+=====================================================*/
+
+@media(max-width:1100px){
+
+.card-container{
+
+    grid-template-columns:repeat(2,320px);
+
+}
+
+.feature-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.logo h1{
+
+    font-size:40px;
+
+}
+
+.logo i{
+
+    font-size:45px;
+
+}
+
+.header h2{
+
+    font-size:28px;
+
+}
+
+.card-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.feature-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.testimonial-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-links{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.container{
+
+    padding:40px 15px;
+
+}
+
+.header h2{
+
+    font-size:24px;
+
+}
+
+.features h2,
+
+.testimonials h2{
+
+    font-size:30px;
+
+}
+
+.card{
+
+    padding:28px;
+
+}
+
+}
